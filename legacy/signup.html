@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page - Buat Akun Olshop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8f9fa;
+            height: 100vh;
+        }
+
+        .container-fluid {
+            height: 100vh;
+            padding: 0;
+        }
+
+        .left-section {
+            background: linear-gradient(135deg, #1e90ff 0%, #0077be 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right-section {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .top-nav {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-text {
+            color: #6c757d;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .login-btn {
+            background: linear-gradient(135deg, #40e0d0 0%, #00ced1 100%);
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .login-btn:hover {
+            background: linear-gradient(135deg, #00ced1 0%, #40e0d0 100%);
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .character-3d {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .character {
+            position: absolute;
+            width: 250px;
+            height: 350px;
+            left: 0px;
+            top: 0px;
+            background: url('N13_12.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .signup-form {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 90%;
+        }
+
+        .signup-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: #495057;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            background-color: #40e0d0;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .form-control:focus {
+            border-color: #40e0d0;
+            box-shadow: 0 0 0 0.2rem rgba(64, 224, 208, 0.25);
+            background-color: #40e0d0;
+        }
+
+        .form-control::placeholder {
+            color: #2c3e50;
+            opacity: 0.8;
+        }
+
+        .create-btn {
+            background: linear-gradient(135deg, #40e0d0 0%, #00ced1 100%);
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .create-btn:hover {
+            background: linear-gradient(135deg, #00ced1 0%, #40e0d0 100%);
+            transform: translateY(-1px);
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .float-circle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .float1 {
+            width: 60px;
+            height: 60px;
+            top: 15%;
+            right: 20%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .float2 {
+            width: 40px;
+            height: 40px;
+            bottom: 30%;
+            left: 15%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @media (max-width: 768px) {
+            .container-fluid {
+                flex-direction: column;
+            }
+            
+            .left-section, .right-section {
+                min-height: 50vh;
+            }
+            
+            .top-nav {
+                top: 20px;
+                right: 20px;
+            }
+            
+            .character-3d {
+                width: 200px;
+                height: 300px;
+            }
+            
+            .character {
+                width: 150px;
+                height: 250px;
+                transform: scale(0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row h-100">
+            <!-- Left Section with 3D Character -->
+            <div class="col-md-6 left-section">
+                <div class="floating-elements">
+                    <div class="float-circle float1"></div>
+                    <div class="float-circle float2"></div>
+                </div>
+                
+                <div class="character-3d">
+                    <div class="character"></div>
+                </div>
+            </div>
+            
+            <!-- Right Section with Signup Form -->
+            <div class="col-md-6 right-section">
+                <div class="top-nav">
+                    <p class="nav-text">Sudah Punya akun?</p>
+                    <a href="#" class="login-btn">LOG IN</a>
+                </div>
+                
+                <div class="signup-form">
+                    <h2 class="signup-title">Buat Akun Olshop Anda</h2>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" placeholder="Masukkan nama" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Nomor</label>
+                            <input type="tel" class="form-control" placeholder="Masukkan nomor" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Masukkan email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Masukkan password" required>
+                        </div>
+                        
+                        <button type="submit" class="create-btn">CREATE ACCOUNT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

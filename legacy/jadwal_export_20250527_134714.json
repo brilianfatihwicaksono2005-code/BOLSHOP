@@ -1,0 +1,16 @@
+{
+  "jadwal_kuliah": [
+    {
+      "mata_kuliah": "psd",
+      "hari": "Selasa",
+      "jam_mulai": "12:00",
+      "jam_selesai": "13:00",
+      "ruangan": "hu109",
+      "jenis": "Kuliah",
+      "prioritas": "Sangat Tinggi",
+      "fleksibel": false
+    }
+  ],
+  "kegiatan_lain": [],
+  "exported_at": "2025-05-27T13:47:14.383961"
+}

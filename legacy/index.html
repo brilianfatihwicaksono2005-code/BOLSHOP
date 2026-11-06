@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>B'OLSHOP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional: Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .brand-logo {
+      width: 150px;
+    }
+
+    .banner-img {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+      margin: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card {
+      border: none;
+      max-width: 200px;
+      margin-bottom: 30px;
+    }
+
+    .product-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .product-name {
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    .product-price {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .banner-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .banner-collage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 400px;
+    }
+
+    .main-container {
+      margin-top: 30px;
+    }
+
+    .btn {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom py-3 px-4">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold fs-4" href="#">B'OLSHOP</a>
+
+    <!-- Search bar -->
+    <form class="d-flex mx-auto" style="width: 50%; max-width: 600px;">
+      <div class="input-group rounded-pill border border-secondary">
+        <input class="form-control border-0 rounded-start-pill" type="search" placeholder="Cari Barang anda..." aria-label="Search">
+        <button class="btn btn-outline-secondary border-0 bg-transparent rounded-end-pill" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
+
+    <!-- Icons: Masuk/Daftar dan Keranjang -->
+    <div class="d-flex align-items-center gap-4">
+      <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-1">
+        <i class="fas fa-user"></i>
+        <span class="fw-semibold">Masuk/Daftar</span>
+      </a>
+      <a href="#" class="text-dark">
+        <i class="fas fa-bag-shopping fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="d-flex justify-content-center mb-4">
+  <img src="banner.jpg" class="banner-img" alt="Banner" style="width: 100%; max-width: 900px; height: auto;">
+</div>
+
+
+  <!-- Produk -->
+  <div class="row justify-content-center text-center g-4">
+    <!-- Produk 1 -->
+    <div class="col-md-3 mb-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; box-shadow: none; max-width: 250px;">
+        <img src="roman.webp" class="card-img-top product-img" alt="Produk 1" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+            <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Roman LG GS</p>
+          <p class="product-price">Rp 400.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="col-md-3 mb-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; box-shadow: none; max-width: 250px;">
+        <img src="Lux Relaxed.webp" class="card-img-top product-img" alt="Produk 2" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+            <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Lux Relaxed</p>
+          <p class="product-price">Rp 250.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="col-md-3 mb-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; box-shadow: none; max-width: 250px;">
+        <img src="Loose fit.webp" class="card-img-top product-img" alt="Produk 3" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Loose Fit Linen</p>
+          <p class="product-price">Rp 190.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Wrapper Utama -->
+<div class="container py-4">
+
+  <!-- Logo H&M di Tengah -->
+  <div class="text-center mb-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" class="mb-3" style="max-width: 200px;">
+  </div>
+
+  <!-- Kolase Gambar -->
+  <div class="d-flex flex-wrap justify-content-center gap-4 mb-5">
+    <img src="thisrt.jpg" alt="Model 1" style="max-width: 200px; margin: 10px;">
+    <img src="shirt.jpg" alt="Model 2" style="max-width: 200px; margin: 10px;">
+    <img src="hoddies.jpg" alt="Model 3" style="max-width: 200px; margin: 10px;">
+    <img src="sneakers.jpg" alt="Model 4" style="max-width: 200px; margin: 10px;">
+  </div>
+
+<!-- Container Produk -->
+<div class="container py-5">
+
+  <!-- Baris Pertama -->
+  <div class="row justify-content-center text-center g-4">
+    <!-- Produk 1 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; max-width: 250px;">
+        <img src="roman.webp" class="card-img-top" alt="Produk 1" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Roman LG GS</p>
+          <p class="product-price">Rp 400.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; max-width: 250px;">
+        <img src="Lux Relaxed.webp" class="card-img-top" alt="Produk 2" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Lux Relaxed</p>
+          <p class="product-price">Rp 250.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; max-width: 250px;">
+        <img src="Loose fit.webp" class="card-img-top" alt="Produk 3" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Loose Fit Linen</p>
+          <p class="product-price">Rp 190.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 d-flex justify-content-center mt-4">
+    <div class="banner-column">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" class="banner-img">
+      <div class="banner-collage">
+        <img src="thisrt.jpg" alt="Model 1" class="banner-img">
+        <img src="shirt.jpg" alt="Model 2" class="banner-img">
+        <img src="hoddies.jpg" alt="Model 3" class="banner-img">
+        <img src="sneakers.jpg" alt="Model 4" class="banner-img">
+      </div>
+    </div>
+
+  <!-- Baris Kedua -->
+  <div class="row justify-content-center text-center g-4 mt-3">
+    <!-- Produk 4 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; max-width: 250px;">
+        <img src="roman.webp" class="card-img-top" alt="Produk 4" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Roman LG GS</p>
+          <p class="product-price">Rp 400.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 5 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; max-width: 250px;">
+        <img src="Lux Relaxed.webp" class="card-img-top" alt="Produk 5" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Lux Relaxed</p>
+          <p class="product-price">Rp 250.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 6 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card product-card" style="border: none; max-width: 250px;">
+        <img src="Loose fit.webp" class="card-img-top" alt="Produk 6" style="height: 180px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="product-title">H&M</h5>
+          <p class="product-name mb-1">Loose Fit Linen</p>
+          <p class="product-price">Rp 190.000</p>
+          <button class="btn btn-outline-dark w-100">Masukkan ke Tas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Deskripsi Fashion Pria -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10 text-center">
+      <h2 class="mb-4 fw-bold">BELANJA ONLINE FASHION PRIA TERBARU</h2>
+      <p class="text-start" style="line-height: 1.8; text-align: justify;">
+        Bolshop Indonesia adalah pusat tren fashion pria, mempunyai ribuan produk mulai dari kaos, celana jeans, sepatu kets hingga sepatu formal, dompet, dan ikat pinggang. Kami memiliki label desainer dan brand terbaru, mencakup beragam gaya mulai modern minimalis, professional, akhir pekan santai, dan banyak lagi. Pilihan Kami sangat bisa melengkapi gaya Anda dari atas ke bawah dimana Anda dapat menemukan kemeja dengan gaya klasik dan kontemporer, dan bahkan perlengkapan olahraga seperti sepatu lari, sepatu slip on, pakaian, kaos lengan pendek, kaos lengan panjang, kaos polo dan perlengkapan olahraga.
+        <br><br>
+        Selain pakaian, Bolshop Indonesia juga menyediakan sejumlah aksesoris untuk melengkapi gayamu. Berbagai jenis jam tangan, seperti smart watch, jam tangan klasik, dan jam mewah. Koleksi tas lengkap: tas punggung, ransel, selempang, dan tas laptop. Bolshop Indonesia juga memenuhi kebutuhan perawatan pria, mulai dari perawatan kulit dan rambut, serta kebutuhan mencukur dan parfum. Kacamata pria juga tersedia dan Anda dapat memilih model yang trendi atau fungsional. Selain pakaian sehari-hari tersedia juga perlengkapan sholat dan baju koko untuk dikenakan saat beribadah serta masih banyak lagi.
+        <br><br>
+        Teruntuk pria yang selalu ingin membuat kesan terbaik melalui penampilan, Bolshop Indonesia adalah pilihan tepat dan memiliki semua yang Anda butuhkan.
+        <br><br>
+        <strong>Koleksi Lengkap Fashion Pria dari Brand-brand Terbaik</strong><br>
+        Fashion tidak hanya bagi kaum wanita, fashion juga sangat erat hubungannya dengan para pria dan seolah sudah menjadi kebutuhan. Oleh sebab itu Bolshop Indonesia juga berupaya menjawab kebutuhan fashion pria ini dengan menawarkan berbagai macam produk fashion lengkap dari mulai pakaian pria, sepatu pria, aksesoris pria, dan juga baju muslim untuk pria dengan harga spesial. Brand-brand ternama lokal dan internasional dengan kualitas terbaik yang siap memberikan kepuasan akan trend fashion pria saat ini dapat Anda jumpai di Bolshop Indonesia. Untuk tampil menarik dan lebih baik selalu ikuti perkembangan fashion pria bersama Bolshop Indonesia.
+        <br><br>
+        Kami juga memberikan layanan <strong>GRATIS pengembalian</strong> jika barang yang Anda pesan tidak sesuai. Disaat Anda mencari kebutuhan fashion pria, Bolshop Indonesia adalah toko fashion online yang paling tepat untuk Anda. <strong>Selamat berbelanja dan selalu cek di bolshop.co.id!</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Full Black Footer -->
+<footer class="w-100" style="background-color: #000000; margin: 0; padding: 0;">
+    <div class="container-fluid text-white" style="padding: 60px 15px 30px 15px;">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                <h3 class="fs-5 fw-normal mb-3 text-white">Enjoy our exclusive offers</h3>
+                <p class="text-light mb-4 lh-base" style="font-size: 14px;">
+                    Stay up-to-date with our latest news, updates and promotions
+                </p>
+                
+                <form class="row g-0 mb-3">
+                    <div class="col-8 col-sm-9">
+                        <input type="email" class="form-control border-0" placeholder="Email address" required style="font-size: 14px;">
+                    </div>
+                    <div class="col-4 col-sm-3">
+                        <button type="submit" class="btn btn-light w-100 h-100 border-0 fw-medium" style="font-size: 14px;">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-6 col-md-6">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                        <h3 class="fs-5 fw-normal mb-3 text-white">Connect with us</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="https://www.instagram.com/brilianfaatih" class="text-light text-decoration-none" style="font-size: 14px;">Instagram</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="https://www.tiktok.com/@brilianfaaatih" class="text-light text-decoration-none" style="font-size: 14px;">Tiktok</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="https://x.com/brilianfatih?s=21" class="text-light text-decoration-none" style="font-size: 14px;">Twitter</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none" style="font-size: 14px;">Youtube</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none" style="font-size: 14px;">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-top pt-4 mt-4" style="border-color: #444 !important;">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0" style="font-size: 12px;">Copyright © 2023, Alexas All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted text-decoration-none" style="font-size: 12px;">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+
+
+
+
+
+<!-- Bootstrap JS (Optional if no interaction needed) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

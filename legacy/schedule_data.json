@@ -1,0 +1,45 @@
+{
+  "jadwal_kuliah": [
+    {
+      "mata_kuliah": "psd",
+      "hari": "Selasa",
+      "jam_mulai": "12:00",
+      "jam_selesai": "13:00",
+      "ruangan": "hu109",
+      "jenis": "Kuliah",
+      "prioritas": "Sangat Tinggi",
+      "fleksibel": false
+    },
+    {
+      "mata_kuliah": "teori pbo",
+      "hari": "senin",
+      "jam_mulai": "07:00",
+      "jam_selesai": "08:55",
+      "ruangan": "cu209",
+      "jenis": "Kuliah",
+      "prioritas": "Sangat Tinggi",
+      "fleksibel": false
+    },
+    {
+      "mata_kuliah": "praktikum pbo",
+      "hari": "senin",
+      "jam_mulai": "12:00",
+      "jam_selesai": "15:00",
+      "ruangan": "hu108",
+      "jenis": "Kuliah",
+      "prioritas": "Sangat Tinggi",
+      "fleksibel": false
+    },
+    {
+      "mata_kuliah": "PBD",
+      "hari": "Selasa",
+      "jam_mulai": "08:00",
+      "jam_selesai": "10:55",
+      "ruangan": "TILC",
+      "jenis": "Kuliah",
+      "prioritas": "Sangat Tinggi",
+      "fleksibel": false
+    }
+  ],
+  "kegiatan_lain": []
+}
